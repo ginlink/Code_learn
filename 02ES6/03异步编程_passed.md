@@ -1,3 +1,8 @@
+*******
+**此内容整理至03Generator函数.md**
+
+********
+
 ## Generator函数 生产器
 
 ### 协程
@@ -30,6 +35,10 @@ function *asyncJob() {
 
 
 ### 如何判断继发还是并发？
+
+先上结论 **只要await后面跟的是new Promise（无论是表达式，还是通过函数返回），那么就是继发，如果直接是一个promise对象，就是并发**
+
+当然并发推荐用Promise.all([pro1, pro2])来进行
 
 ```javascript
 async function gen() {
@@ -88,7 +97,7 @@ async function gen() {
 }
 ```
 
-**总结 只要await后面跟的是一个表达式，那么就是继发，如果直接是一个promise对象，就是并发**
+
 
 ### 参考
 

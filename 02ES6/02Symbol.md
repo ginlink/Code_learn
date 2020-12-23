@@ -29,7 +29,7 @@ String(sym) // 'Symbol(My symbol)'
 sym.toString() // 'Symbol(My symbol)'
 ```
 
-## 作为属性名的Symbol
+## 应用1：作为属性名的Symbol-防止属性名冲突
 
 由于每一个Symbol值都是不相等的，这意味着Symbol值可以作为标识符，用于对象的属性名，就能保证不会出现同名的属性。这对于一个对象由多个模块构成的情况非常有用，能防止某一个键被不小心改写或覆盖。
 
@@ -142,7 +142,7 @@ iframe.contentWindow.Symbol.for('foo') === Symbol.for('foo')
 
 上面代码中，iframe 窗口生成的 Symbol 值，可以在主页面得到。
 
-## 实例：模块的 Singleton 模式
+## 应用2：模块的 Singleton 模式
 
 Singleton模式指的是调用一个类，任何时候返回的都是同一个实例。
 
@@ -191,7 +191,7 @@ function A() {
   this.foo = 'hello';
 }
 
-if (!global[FOO_KEY]) {
+if (!global[FOO_KEY]) { // global是一个宿主函数，向它上面挂载了一个Symbol字符串，保证唯一性
   global[FOO_KEY] = new A();
 }
 
@@ -216,9 +216,9 @@ const FOO_KEY = Symbol('foo');
 
 上面代码将导致其他脚本都无法引用`FOO_KEY`。但这样也有一个问题，就是如果多次执行这个脚本，每次得到的`FOO_KEY`都是不一样的。虽然Node会将脚本的执行结果缓存，一般情况下，不会多次执行同一个脚本，但是用户可以手动清除缓存，所以也不是完全可靠。
 
+
+
 ### 参考文献
 
-```javascript
-[1]Symbol.http://caibaojian.com/es6/symbol.html
-```
+[1]Symbol.[http://caibaojian.com/es6/symbol.html](http://caibaojian.com/es6/symbol.html)
 

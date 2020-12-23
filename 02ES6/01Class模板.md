@@ -102,8 +102,6 @@ person.sayName(); // "张三"
 
 考虑到未来所有的代码，其实都是运行在模块之中，所以ES6实际上把整个语言升级到了严格模式。
 
-
-
 ### 继承
 
 ```javascript
@@ -133,13 +131,20 @@ constructor(...args) {
 
 #### 类的prototype属性和__proto__属性
 
-大多数浏览器的ES5实现之中，每一个对象都有`__proto__`属性，指向对应的构造函数的prototype属性。Class作为构造函数的语法糖，同时有prototype属性和`__proto__`属性，因此同时存在两条继承链。
+几句话：
 
-（1）子类的`__proto__`属性，表示构造函数的继承，总是指向父类。
+* **proto是指向 构造该对象的原型** 
 
-（2）子类`prototype`属性的`__proto__`属性，表示方法的继承，总是指向父类的`prototype`属性。
+  ```javascript
+  class Person{}
+  let person = new Person()
+  // 针对于实例person：它的proto为Person的prototype
+  // 针对于类Person：它的proto为Object的prototype
+  ```
 
-这两条继承链，可以这样理解：作为一个对象，子类（`B`）的原型（`__proto__`属性）是父类（`A`）；作为一个构造函数，子类（`B`）的原型（`prototype`属性）是父类的实例。
+* prototype是一个属性，且只有Function才有。这个属性是一个指针，指向一个对象，这个对象的用途就是包含所有实例共享的属性和方法（我们把这个对象叫做原型对象）。原型对象也有一个属性，叫做constructor，这个属性包含了一个指针，指回原构造函数。
+
+额外阅读  [[彻底搞懂js里的__proto__和prototype到底有什么区别？](https://segmentfault.com/a/1190000016024573)]
 
 #### Object.getPrototypeOf() 判断一个类是否继承了另一个类
 
@@ -159,6 +164,8 @@ Object.getPrototypeOf(ColorPoint) === Point
 * 作为对象时，super相当于A.prototype，可以访问A原型上的方法和属性
 
 注意，`super`虽然代表了父类`A`的构造函数，但是返回的是子类`B`的实例，即`super`内部的`this`指的是`B`，因此`super()`在这里相当于`A.prototype.constructor.call(this)`。
+
+A.prototype.constructor为父类
 
 ```javascript
 class A {
@@ -264,16 +271,6 @@ inst.prop
 Dog{print(){}} 静态方法
 
 Dog{prototype:{print(){}}} 实例方法
-
-#### Prototype和____proto___的联系
-
-几句话：
-
-**proto是指向 构造该对象的原型** 
-
-prototype是一个属性，且只有Function才有。这个属性是一个指针，指向一个对象，这个对象的用途就是包含所有实例共享的属性和方法（我们把这个对象叫做原型对象）。原型对象也有一个属性，叫做constructor，这个属性包含了一个指针，指回原构造函数。
-
-额外阅读  [[彻底搞懂js里的__proto__和prototype到底有什么区别？](https://segmentfault.com/a/1190000016024573)]
 
 #### Class的静态属性和实例属性
 
