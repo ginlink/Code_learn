@@ -30,11 +30,11 @@
 
 [ √ ] `ES6 Decorator` http://caibaojian.com/es6/decorator.html `+1
 
-	*  [Decorator](./ES6/04Decorator.md)
+- [Decorator](./ES6/04Decorator.md)
 
 [ -- ] `ES6 Extend ` http://caibaojian.com/es6/decorator.html `+1`
 
-* [字符串扩展](./02ES6/051StringExtend.md)
+- [字符串扩展](./02ES6/051StringExtend.md)
 
 [ √ ] `数据结构与算法 ` JavaScript数据结构与算法 `+3`
 
