@@ -2,6 +2,8 @@
 
 一个可以记录我学习计算机的地方
 
+
+
 ### 分类
 
 
@@ -11,6 +13,11 @@
 | Vue  | nodejs ||
 | Css  | linux ||
 | Html |      ||
+| less | ||
+| pug | ||
+| TypeScript | ||
+
+
 
 ### 安排表
 
@@ -21,6 +28,8 @@
 | [ √ ] ES6 Decorator (装饰器)<br />[ -- ] ES6Extend (扩展)<br />[ × ] YMmall (a Vue project) + 2sp(集)<br />[ × ] Nodejs + 2sp(集)<br />[ √ ] 数据结构 | 2020-12-24 |
 | [  ]  YMmall (a Vue project) + 2sp(集)<br />[  ]  Nodejs + 2sp(集)<br />[  ]   把C语言复习整理一下 | 2020-12-25 |
 |                                                              |            |
+
+
 
 ### 如何完成任务
 
@@ -39,6 +48,18 @@
 [ √ ] `数据结构与算法 ` JavaScript数据结构与算法 `+3`
 
 * [栈](./03DataCtructure.md/01Stack.md)、[队列](./03DataCtructure.md/02Queue.md)、[链表](./03DataCtructure.md/03LinkedList.md)
+
+
+
+### 其他
+
+1. 手机端上github好用的浏览器
+
+   [ √ ] via	这个浏览器很小，但是用起来真流畅，还可以进行资源嗅探，下载视频和音乐
+
+   [ × ] UC浏览器	UC和火狐都上不了github，额
+
+   
 
 ### 关于我
 
