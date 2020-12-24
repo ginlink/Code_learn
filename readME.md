@@ -30,7 +30,7 @@
 
 [ √ ] `ES6 Decorator` http://caibaojian.com/es6/decorator.html `+1
 
-- [Decorator](.\02ES6\04Decorator.md)
+- [Decorator](./02ES6\04Decorator.md)
 
 [ -- ] `ES6 Extend ` http://caibaojian.com/es6/decorator.html `+1`
 
@@ -38,7 +38,7 @@
 
 [ √ ] `数据结构与算法 ` JavaScript数据结构与算法 `+3`
 
-* [栈](./03DataCtructure.md\01Stack.md)、[队列](.\03DataCtructure.md\02Queue.md)、[链表](.\03DataCtructure.md\03LinkedList.md)
+* [栈](./03DataCtructure.md\01Stack.md)、[队列](./03DataCtructure.md\02Queue.md)、[链表](./03DataCtructure.md\03LinkedList.md)
 
 ### 关于我
 
