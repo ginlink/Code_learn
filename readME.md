@@ -14,23 +14,27 @@
 
 ### 安排表
 
+[ √ ] 完成   [ -- ] 完成部分  [ × ] 未进行
+
 | Tasks                                                        | Date       |
-| ------------------------------------------------------------ | ---------- |
-| ES6 Decorator (装饰器)<br />ES6Extend (扩展)<br />YMmall (a Vue project) + 2sp(集)<br />Nodejs + 2sp(集) | 2020-12-24 |
-|                                                              |            |
+| :----------------------------------------------------------- | ---------- |
+| [ √ ] ES6 Decorator (装饰器)<br />[ -- ] ES6Extend (扩展)<br />[ × ] YMmall (a Vue project) + 2sp(集)<br />[ × ] Nodejs + 2sp(集)<br />[ √ ] 数据结构 | 2020-12-24 |
+| [  ]  YMmall (a Vue project) + 2sp(集)<br />[  ]  Nodejs + 2sp(集)<br />[  ]   把C语言复习整理一下 | 2020-12-25 |
 |                                                              |            |
 
 ### 如何完成任务
 
 2020-12-24
 
-`nodejs`  https://github.com/chyingp/nodejs-learning-guide `+2`
+[ × ] `nodejs`  https://github.com/chyingp/nodejs-learning-guide `+2`
 
-`ES6 Decorator` http://caibaojian.com/es6/decorator.html `+2`
+[ √ ] `ES6 Decorator` http://caibaojian.com/es6/decorator.html `+1
 
-`ES6 Extend ` http://caibaojian.com/es6/decorator.html `+2`
+[ -- ] `ES6 Extend ` http://caibaojian.com/es6/decorator.html `+2`
 
+[ √ ] `JavaScript数据结构与算法 ` http://caibaojian.com/es6/decorator.html `+3
 
+​	栈、队列、链表
 
 ### 关于我
 
