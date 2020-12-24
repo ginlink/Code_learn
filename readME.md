@@ -30,7 +30,7 @@
 
 [ √ ] `ES6 Decorator` http://caibaojian.com/es6/decorator.html `+1
 
-- [Decorator](./ES6/04Decorator.md)
+- [Decorator](.\02ES6\04Decorator.md)
 
 [ -- ] `ES6 Extend ` http://caibaojian.com/es6/decorator.html `+1`
 
