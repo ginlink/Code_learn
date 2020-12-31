@@ -9,3 +9,6 @@
 - [葵中剑Just Sword Wang's Blog](https://swordair.com) --漫画家（12年至今）、Linux运维（old）
 
 - 
+
+* [炫酷绘画工具](https://bomomo.com/)
+
