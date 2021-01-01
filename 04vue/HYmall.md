@@ -35,7 +35,7 @@ import BScroll from '@better-scroll/core'
 let bs = new BScroll('.wrapper', {})
 ```
 
-注意一定要开启点击事件
+##### 01 注意一定要开启点击事件
 
 ```js
 this.scroll = new BScroll(wrapper, {
@@ -43,7 +43,30 @@ this.scroll = new BScroll(wrapper, {
 });
 ```
 
+##### 02 又一个坑 上拉加载
 
+\[BScroll warn]: EventEmitter has used unknown event type: "pullingDown"
+
+报错原因：没有安装pullup这个插件
+解决：
+
+```bash
+npm install @better-scroll/pull-up@next --save
+```
+
+```javascript
+import BScroll from '@better-scroll/core'
+import Pullup from '@better-scroll/pull-up'
+
+BScroll.use(Pullup)  // 注册插件
+
+new BScroll(document.querySelector(".wrap"), {
+      probeType: 3,
+      pullUpLoad: true  // 设置启用插件
+});
+```
+
+https://blog.csdn.net/qfrex/article/details/107835723
 
 
 
@@ -148,6 +171,16 @@ transparent表示透明，三边透明一遍亮
 tabbar-> 
 
 ​	Home(navbar-> bscroll-> swiper-> recommend-> feature-> tabControl-> goods-> backUp)
+
+### 导入vue组件的方法
+
+```js
+const App = ()=> import('@/app/App')  // 路由组件懒加载
+
+import App from '@/app/App'  // 直接加载
+```
+
+
 
 ### 00 axios如何封装？
 
